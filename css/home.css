@@ -1,0 +1,113 @@
+.hero-container{
+        min-height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        padding: 70px 20px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+}
+.hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex: 0 0 60%;
+      }
+      .hero-container p{
+        font-size: 20px;
+      }
+      .hero-image img{
+        
+        width: 400px;
+        max-width: 95%;
+
+      }
+      .hero-image {
+        text-align: right;
+        flex: 0 0 40%;
+      }   
+
+/* Mobile and small screens */   
+      @media (max-width: 768px){
+        .hero-container {
+                flex-direction: column; /* stack vertically */
+                text-align: center; /* center the text */
+                gap: 30px; /* smaller gap on mobile */
+              }
+              .hero-text,
+              .hero-image{
+                width: 100%;
+        }
+        .hero-image{
+                text-align: center;
+        }
+      }
+      .image-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+
+      }
+      .image-box-container .image-box{
+        margin: -120px 15px 70px 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        
+      }
+      .image-box .text-content{
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+      }
+      .image-box-container img{
+        width: 100%;
+      }
+      .focus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f1ee; /* or light blue, soft purple */
+        padding: 80px 20px;
+        gap: 50px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      
+      .focus-left {
+        flex: 0 0 40%; /* or 30%, depends on your design */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .focus-right {
+        flex: 0 0 60%; /* or 70% */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      @media (max-width: 768px) {
+        .focus {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .focus-left, 
+        .focus-right {
+          width: 100%;
+        }
+      }
+      
+            
